@@ -1,42 +1,12 @@
-# Dimension - Jekyll Theme
+# Personal Webpage/Portfolio
 
-A Jekyll version of the "Dimension" theme by [HTML5 UP](https://html5up.net/).
-
-![Dimension Theme](assets/images/screenshot.jpg "Dimension Theme")
-
-# How to Use
-
-For those unfamiliar with how Jekyll works, check out [https://jekyllrb.com/](https://jekyllrb.com/) for all the details,
-or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/),
-and [creating pages](https://jekyllrb.com/docs/pages/).
-
-- **GitLab**: Simply fork this repository and start editing the `_config.yml` file!
-- **GitHub**: Fork this reposity and create a branch named `gh-pages`, then start editing the `_config.yml` file! The `.gitlab-ci.yml` file is only needed for GitLab Pages, so feel free to delete this if you are using GitHub instead.
-
-# Added Features
-
-* Add your **social profiles** easily in `_config.yml`.
-
-# Configuration
-
-You can use the following custom parameters in `_config.yml`.
-
-## Site Icon
-- `icon` sets the class for your site's [Font Awesome](http://fontawesome.io/icons/) icon.
-
-## Social settings
-- `500px_url`
-- `facebook_url`
-- `github_url`
-- `gitlab_url`
-- `googleplus_url`
-- `instagram_url`
-- `linkedin_url`
-- `pinterest_url`
-- `slack_url`
-- `twitter_url`
+Hi, my name is Noah Holland-Moritz, and you've reached the github page for my website!  I originally created this site as part of the requirements for my school's [Engineering Honors Program](http://www.cuhonorsengineering.com/).  Now it serves as my personal webpage.  Feel free to use my code for your own nefarious purposes, and contact me if you are having trouble setting it up and want some pointers.  Cheers!
 
 # Credits
+
+This website uses a Jekyll version of the "Dimension" theme by [HTML5 UP](https://html5up.net/), made by [Andrew Banchich](https://github.com/andrewbanchich/dimension-jekyll-theme)
+
+![Dimension Theme](assets/images/screenshot.jpg "Dimension Theme")
 
 Original README from HTML5 UP:
 
@@ -75,3 +45,4 @@ Credits:
 ```
 
 Repository [Jekyll logo](https://github.com/jekyll/brand) icon licensed under a [Creative Commons Attribution 4.0 International License](http://choosealicense.com/licenses/cc-by-4.0/).
+
