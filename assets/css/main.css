@@ -95,7 +95,7 @@
 		font-size: 16pt;
 		overflow-y: scroll;
 	}
-
+	
 		@media screen and (max-width: 1680px) {
 
 			html {
@@ -128,6 +128,7 @@
 		line-height: 1.65;
 	}
 
+	/*Hyperlinks*/
 	a {
 		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
@@ -154,7 +155,7 @@
 	p {
 		margin: 0 0 2rem 0;
 	}
-
+	
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
 		font-weight: 600;
@@ -262,7 +263,7 @@
 			padding: 1rem 1.5rem;
 			overflow-x: auto;
 		}
-
+		
 	hr {
 		border: 0;
 		border-bottom: solid 1px #ffffff;
@@ -1191,7 +1192,7 @@
 		background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
 		background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
 		background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
-		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
+		background-image: radial-gradient(rgba(0, 0, 0, .25) 25%, transparent 55%);
 		max-width: 100%;
 		text-align: center;
 	}
@@ -1204,14 +1205,14 @@
 			position: relative;
 			margin-top: 3.5rem;
 		}
-
+			/*Vertical lines*/
 			#header > *:before {
 				content: '';
 				display: block;
 				position: absolute;
 				top: calc(-3.5rem - 1px);
 				left: calc(50% - 1px);
-				width: 1px;
+				width: 0px; /*Makes the vertical lines invisible*/
 				height: calc(3.5rem + 1px);
 				background: #ffffff;
 			}
@@ -1223,24 +1224,31 @@
 			#header > :first-child:before {
 				display: none;
 			}
-
+		/*Profile Picture*/
 		#header .logo {
-			width: 5.5rem;
-			height: 5.5rem;
+			/*width: 5.5rem;
+			height: 5.5rem;*/
+			width: 15rem;
+			height: 15rem;
 			line-height: 5.5rem;
-			border: solid 1px #ffffff;
+			border: solid 2px #ffffff;
 			border-radius: 100%;
+			/*Remove these lines to remove profile picture*/
+			background-image: url("../../assets/images/avatarlarge.png");
+			background-position: center;
+			background-size: cover;
 		}
 
 			#header .logo .icon:before {
-				font-size: 2rem;
+				/*font-size: 2rem*/
+				font-size: 0rem; /*Removes the icon thats there by default*/
 			}
-
+		/*Main Title Horizonal Border*/
 		#header .content {
 			border-style: solid;
 			border-color: #ffffff;
-			border-top-width: 1px;
-			border-bottom-width: 1px;
+			border-top-width: 2px;
+			border-bottom-width: 2px;
 			max-width: 100%;
 		}
 
@@ -1253,7 +1261,7 @@
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
-				padding: 3rem 2rem;
+				padding: 1rem 2rem;
 				max-height: 40rem;
 				overflow: hidden;
 			}
@@ -1268,7 +1276,7 @@
 				font-size: 0.8rem;
 				line-height: 2;
 			}
-
+		/*Buttons Border*/
 		#header nav ul {
 			display: -moz-flex;
 			display: -webkit-flex;
@@ -1280,7 +1288,7 @@
 			border: solid 1px #ffffff;
 			border-radius: 4px;
 		}
-
+			/*Button mid borders*/
 			#header nav ul li {
 				padding-left: 0;
 				border-left: solid 1px #ffffff;
@@ -1309,7 +1317,7 @@
 					#header nav ul li a:active {
 						background-color: rgba(255, 255, 255, 0.175);
 					}
-
+		/*Button middle bar*/
 		#header nav.use-middle:after {
 			content: '';
 			display: block;
