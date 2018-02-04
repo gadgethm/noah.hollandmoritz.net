@@ -1158,6 +1158,7 @@
 
 			#wrapper {
 				padding: 2rem 1rem;
+				
 			}
 
 		}
@@ -1239,10 +1240,6 @@
 			background-size: cover;
 		}
 
-			#header .logo .icon:before {
-				/*font-size: 2rem*/
-				font-size: 0rem; /*Removes the icon thats there by default*/
-			}
 		/*Main Title Horizonal Border*/
 		#header .content {
 			border-style: solid;
@@ -1383,17 +1380,13 @@
 				}
 
 			#header .logo {
-				width: 4.75rem;
-				height: 4.75rem;
+				width: 13rem;
+				height: 13rem;
 				line-height: 4.75rem;
 			}
-
-				#header .logo .icon:before {
-					font-size: 1.75rem;
-				}
-
+						
 			#header .content .inner {
-				padding: 2.5rem 1rem;
+				padding: 0.5rem 0rem;
 			}
 
 			#header .content p {
@@ -1407,11 +1400,16 @@
 			#header {
 				padding: 1.5rem 0;
 			}
-
+				
 				#header .content .inner {
-					padding: 2.5rem 0;
+					padding: 0.5rem 0rem;
 				}
 
+				#header .content .inner h1 {
+					font-size: 1.1rem
+				}
+				
+				
 				#header nav ul {
 					-moz-flex-direction: column;
 					-webkit-flex-direction: column;
@@ -1578,6 +1576,7 @@
 		text-align: center;
 	}
 
+		
 		#footer .copyright {
 			letter-spacing: 0.2rem;
 			font-size: 0.6rem;
