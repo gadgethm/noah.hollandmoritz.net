@@ -1,0 +1,36 @@
+# Site settings
+title: Noah Holland-Moritz
+email: nhollandmoritz@gmail.com
+description: Hello, you've found my personal website!  <br \> It's currently a work in progress, but I'll be adding more content soon!
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+author: Noah Holland-Moritz
+street_address: 
+city: 
+state: 
+zip_code:
+country: United States of America
+phone:
+
+icon: fa-facebook-official # Font Awesome class for your site's icon
+
+# Social settings
+facebook_url: https://www.facebook.com/nhollandmoritz
+github_url: https://github.com/gadgethm
+gitlab_url: 
+googleplus_url: 
+instagram_url: https://www.instagram.com/gadgethm/
+linkedin_url: https://www.linkedin.com/in/noah-holland-moritz-49b742122/
+pinterest_url:
+slack_url:
+twitter_url:
+
+# Build settings
+markdown: kramdown
+
+# This section keeps the rakefile from being built into the site
+exclude: [rakefile]
+
+sass:
+   sass_dir: _sass
+   style: compressed
