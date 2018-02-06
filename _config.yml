@@ -29,7 +29,7 @@ twitter_url:
 markdown: kramdown
 
 # This section keeps the rakefile from being built into the site
-exclude: [rakefile]
+exclude: ["rakefile","Gemfile","Gemfile.lock","LICENSE.md","README.md","dimension_jekyll_theme.gemspec"]
 
 sass:
    sass_dir: _sass
