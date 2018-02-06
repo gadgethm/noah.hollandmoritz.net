@@ -7,7 +7,7 @@ task :build do
   system "cp -r ./_site/* ./../temp"
   system "git checkout master"
   system "cd ./../"
-  #system "git rm -r ./#{GH_PAGES_DIR}/*"
+  desc "git rm -r ./#{GH_PAGES_DIR}/*"
   system "cp -r ./temp/* ./#{GH_PAGES_DIR}/"
   system "rm -r ./temp/"
   system "cd ./#{GH_PAGES_DIR} && git add --all"
