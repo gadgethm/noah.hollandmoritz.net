@@ -10,11 +10,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://gitlab.com/andrewbanchich/dimension-jekyll-theme"
   spec.license       = "MIT"
 
-<<<<<<< HEAD
-  spec.files         = `find .`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
-=======
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
->>>>>>> 693b5497cc65256b75b9f8bb7b8f0ff65d44d4a3
 
   spec.add_development_dependency "jekyll", "~> 3.3"
   spec.add_development_dependency "bundler", "~> 1.12"
