@@ -2,16 +2,16 @@ GH_PAGES_DIR = "gadgethm.github.io"
 
 desc "Build Jekyll site and copy files"
 task :build do
-  system "bundle exec jekyll build"
-  system "mkdir ./../temp"
-  system "pwd"
-  system "cp -r ./_site/* ./../temp"
-  system "git checkout master"
-  system "cd ./../"
-  desc "git rm -r ./#{GH_PAGES_DIR}/*"
-  system "cp -r ./temp/* ./#{GH_PAGES_DIR}/"
-  system "rm -r ./temp/"
-  system "cd ./#{GH_PAGES_DIR} && git add --all"
+  system 'bundle exec jekyll build'
+  system 'mkdir ./../temp'
+  system 'pwd'
+  system 'cp -r ./_site/* ./../temp'
+  system 'git checkout master'
+  system 'cd ./../'
+  desc 'git rm -r ./#{GH_PAGES_DIR}/*'
+  system 'cp -r ./temp/* ./#{GH_PAGES_DIR}/'
+  system 'rm -r ./temp/'
+  system 'cd ./#{GH_PAGES_DIR} && git add --all'
 end
 
 desc "Build Jekyll site, then launch local test page in firefox"
