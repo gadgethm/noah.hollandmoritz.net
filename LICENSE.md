@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 ---
 layout: default
 ---
 
-=======
->>>>>>> 693b5497cc65256b75b9f8bb7b8f0ff65d44d4a3
 Creative Commons Attribution 3.0 Unported
 http://creativecommons.org/licenses/by/3.0/
 

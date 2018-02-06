@@ -4,7 +4,9 @@ JEKYLL_PAGES_DIR = "jekyll_site"
 desc "Build Jekyll site and copy files"
 task :build do
   system "bundle exec jekyll build"
-  system "git add --all"
+  system "git rm -r ../#{GH_PAGES_DIR}/*" unless Dir['../#{GH_PAGES_DIR}/*'].empty?
+  system "cp -r _site/* ../#{GH_PAGES_DIR}/"
+  system "cd ../#{GH_PAGES_DIR} && git add --all"
 end
 
 desc "Build Jekyll site, then launch local test page in firefox"
