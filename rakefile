@@ -4,7 +4,7 @@ desc "Build Jekyll site and copy files"
 task :build do
   system "bundle exec jekyll build"
   system "mkdir ./../temp"
-  system "cp -r ./_site/* ./../temp && git rm -r _site/ && git add --all"
+  system "cp -r ./_site/* ./../temp && rm -r ./_site/"
   system "git checkout master && git rm -r * && cd ./../ && cp -r ./temp/* ./#{GH_PAGES_DIR}/ && rm -r ./temp/ && cd ./#{GH_PAGES_DIR} && git add --all"
 end
 
