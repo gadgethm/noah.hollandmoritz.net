@@ -33,11 +33,18 @@
 			</div>
 			<nav>
 				<ul>
-					
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#elements">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				
+					<!-- 
 					
 					
 					<li><a href="#about">about</a></li>
 					
+					
+					<li><a href="#contact">contact</a></li>
 					
 					
 					<li><a href="#elements">elements</a></li>
@@ -51,7 +58,7 @@
 					
 					
 					<li><a href="#work">work</a></li>
-					
+					 -->
 				</ul>
 			</nav>
 		</header>
@@ -69,11 +76,74 @@
 	<h2 class="major">about</h2>
 	<span class="image main"><img src="assets/images/pic03.jpg" alt="" /></span>
 <p>
+{{ site.title }}
+
 Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.
 
 </p>
 </article>
 
+
+
+
+<!-- contact -->
+<article id="contact">
+	<h2 class="major">contact</h2>
+	
+<p>
+<form action="https://formspree.io/nhollandmoritz@gmail.com" method="POST">
+	<div class="field half first">
+		<label for="name">Name</label>
+		<input type="text" name="name" id="name" />
+	</div>
+	<div class="field half">
+		<label for="email">Email</label>
+		<input type="text" name="_replyto" id="email" />
+	</div>
+	<div class="field">
+		<label for="message">Message</label>
+		<textarea name="message" id="message" rows="4"></textarea>
+	</div>
+	<ul class="actions">
+		<li><input type="submit" value="Send Message" class="special" /></li>
+		<li><input type="reset" value="Reset" /></li>
+	</ul>
+</form>
+
+<ul class="icons">
+	
+	{% if site.twitter_url %}
+	<li><a href="{{ site.twitter_url }}" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+	{% endif %}
+				{% if site.googleplus_url %}
+				<li><a href="{{ site.googleplus_url }}" class="icon fa-google-plus" target="_blank"><span class="label">Google+</span></a></li>
+				{% endif %}
+				{% if site.facebook_url %}
+				<li><a href="{{ site.facebook_url }}" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+				{% endif %}
+				{% if site.instagram_url %}
+				<li><a href="{{ site.instagram_url }}" class="icon fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+				{% endif %}
+				{% if site.pinterest_url %}
+				<li><a href="{{ site.pinterest_url }}" class="icon fa-pinterest" target="_blank"><span class="label">Pinterest</span></a></li>
+				{% endif %}
+				{% if site.gitlab_url %}
+				<li><a href="{{ site.gitlab_url }}" class="icon fa-gitlab" target="_blank"><span class="label">GitLab</span></a></li>
+				{% endif %}
+				{% if site.github_url %}
+				<li><a href="{{ site.github_url }}" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+				{% endif %}
+				{% if site.slack_url %}
+				<li><a href="{{ site.slack_url }}" class="icon fa-slack" target="_blank"><span class="label">Slack</span></a></li>
+				{% endif %}
+				{% if site.linkedin_url %}
+				<li><a href="{{ site.linkedin_url }}" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+				{% endif %}
+
+</ul>
+
+</p>
+</article>
 
 
 
@@ -362,7 +432,7 @@ Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris a
 
   <!-- Footer -->
   <footer id="footer">
-    <p class="copyright">&copy; Noah Holland-Moritz - Last modified: February 06, 2018</p>
+    <p class="copyright">&copy; Noah Holland-Moritz - Last modified: February 07, 2018 <br>Design: <a href="https://html5up.net">HTML5 UP</a> - Jekyll Port: <a href="http://andrewbanchi.ch">Andrew Banchich</a></p>
   </footer>
 
 </div>
