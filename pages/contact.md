@@ -1,9 +1,8 @@
 ---
-layout: default
 title: contact
 ---
 
-<form action="https://formspree.io/{{ site.email }}" method="POST">
+<form action="https://formspree.io/nhollandmoritz@gmail.com" method="POST">
 	<div class="field half first">
 		<label for="name">Name</label>
 		<input type="text" name="name" id="name" />
@@ -21,11 +20,12 @@ title: contact
 		<li><input type="reset" value="Reset" /></li>
 	</ul>
 </form>
-<ul class="icons">
 
+<ul class="icons">
+	
 	{% if site.twitter_url %}
-				<li><a href="{{ site.twitter_url }}" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-				{% endif %}
+	<li><a href="{{ site.twitter_url }}" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+	{% endif %}
 				{% if site.googleplus_url %}
 				<li><a href="{{ site.googleplus_url }}" class="icon fa-google-plus" target="_blank"><span class="label">Google+</span></a></li>
 				{% endif %}

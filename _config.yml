@@ -27,6 +27,7 @@ twitter_url:
 
 # Build settings
 markdown: kramdown
+error_mode: warn
 
 # This section keeps the rakefile from being built into the site
 exclude: ["rakefile","Gemfile","Gemfile.lock","LICENSE.md","README.md","dimension_jekyll_theme.gemspec","assets/images/screenshot.jpg"]

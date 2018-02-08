@@ -13,10 +13,15 @@
 			</div>
 			<nav>
 				<ul>
-					{% for page in site.pages  %}
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#elements">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				
+					<!-- {% for page in site.pages  %}
 					{% unless page.layout == 'default' %}
 					<li><a href="#{{ page.title }}">{{ page.title }}</a></li>
-					{% endunless %}{% endfor %}
+					{% endunless %}{% endfor %} -->
 				</ul>
 			</nav>
 		</header>
