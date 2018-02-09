@@ -17,7 +17,6 @@
 
 
   <body>
-
 <!-- Wrapper -->
 <div id="wrapper">
 
@@ -57,6 +56,9 @@
 					
 					
 					
+					<li><a href="#projects">projects</a></li>
+					
+					
 					<li><a href="#work">work</a></li>
 					 -->
 				</ul>
@@ -76,9 +78,7 @@
 	<h2 class="major">about</h2>
 	<span class="image main"><img src="assets/images/pic03.jpg" alt="" /></span>
 <p>
-<p>Noah Holland-Moritz</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
 
 </p>
 </article>
@@ -93,7 +93,7 @@
 <p>
 <p>Please fill out this form to send me an email, or use any of the social media links below!</p>
 
-<form name="contactform" id="contactform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfhOfLg8ctEHzabdx-b2rhVpdcbUWisV4LieK8Oa21mvrz4UQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true">
+<form name="contactform" id="contactform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfhOfLg8ctEHzabdx-b2rhVpdcbUWisV4LieK8Oa21mvrz4UQ/formResponse?" target="hidden_iframe">
 	<div class="field half first">
 		<label for="name" id="test">Name</label>
 		<input type="text" name="entry.1944699830" id="name" />
@@ -112,35 +112,6 @@
 		<li><div class="fade_div" id="submsg"></div></li>
 	</ul>
 </form>
-
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-
-<script src="assets/js/jquery.min.js"></script>
-
-<script type="text/javascript">var submitted=false;</script>
-
-<script type="text/javascript">
-function submitForm() {
-  var frm = $('#contactform');
-  var submsg = document.getElementById("submsg")
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var msg = document.getElementById("msg").value;
-  
-  if (name != "" || email != "" || msg != "")  {
-	frm[0].submit();
-	frm[0].reset();
-	submsg.textContent = "Successfully submitted!";
-	submsg.style.color = 'green'
-	$(".fade_div").finish().fadeIn("fast").delay(3000).fadeOut("slow");
-  } else {
-	submsg.textContent = "Please fill out at least one field.";
-	submsg.style.color = 'white'
-	$(".fade_div").finish().fadeIn("fast").delay(2000).fadeOut("slow");
-  }
-};
-  
-</script>
 
 <hr />
 <ul class="icons">
@@ -437,6 +408,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum fac
 
 
 
+<!-- projects -->
+<article id="projects">
+	<h2 class="major">projects</h2>
+	
+<p>
+
+</p>
+</article>
+
+
+
+
 <!-- work -->
 <article id="work">
 	<h2 class="major">work</h2>
@@ -455,7 +438,7 @@ Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris a
 
   <!-- Footer -->
   <footer id="footer">
-    <p class="copyright">&copy; Noah Holland-Moritz - Last modified: February 08, 2018 <br>Design: <a href="https://html5up.net">HTML5 UP</a> - Jekyll Port: <a href="http://andrewbanchi.ch">Andrew Banchich</a></p>
+    <p class="copyright">&copy; Noah Holland-Moritz - Last modified: February 09, 2018 <br>Design: <a href="https://html5up.net">HTML5 UP</a> - Jekyll Port: <a href="http://andrewbanchi.ch">Andrew Banchich</a></p>
   </footer>
 
 </div>
@@ -468,6 +451,7 @@ Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris a
 <script src="/assets/js/skel.min.js"></script>
 <script src="/assets/js/util.js"></script>
 <script src="/assets/js/main.js"></script>
+<script src="/assets/js/sendForm.js"></script>
 
 
   </body>
