@@ -1,7 +1,7 @@
 # Site settings
 title: Noah Holland-Moritz
 email: nhollandmoritz@gmail.com
-description: Hello, you've found my personal website!  <br \> It's currently a work in progress, but I'll be adding more content soon!
+description: Maker, Tinkerer, Hiker, Astronomer, Amateur Photographer, Student  
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 author: Noah Holland-Moritz
