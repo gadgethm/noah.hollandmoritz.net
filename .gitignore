@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 /_site
 *.gem
 .sass-cache
 Gemfile.lock
+=======
+_site/
+.sass-cache/
+>>>>>>> 9292fa3a9f5969786ae940300bc83235ab233e5d
