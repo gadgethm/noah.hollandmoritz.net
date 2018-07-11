@@ -1,18 +1,13 @@
+<!-- Footer -->
+<div id="footer">
+  
+  <!-- Copyright -->
+  <ul class="copyright">
+    {% if site.title or site.author %}
+      <li>&copy; {{- site.title | default: site.author -}}. All rights reserved.</li>
+    {% endif %}
+    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    <li>Jekyll integration: <a href="https://chrisbobbe.github.io/">Chris Bobbe</a></li>
+  </ul>
+  
 </div>
-
-  <!-- Footer -->
-  <footer id="footer">
-    <p class="copyright">&copy; {{ site.title }} - Last modified: {{ site.time | date:"%B %d, %Y" }} <br>Design: <a href="https://html5up.net">HTML5 UP</a> - Jekyll Port: <a href="http://andrewbanchi.ch">Andrew Banchich</a></p>
-  </footer>
-
-</div>
-
-<!-- BG -->
-<div id="bg"></div>
-
-<!-- Scripts -->
-<script src="{{ 'assets/js/jquery.min.js' | absolute_url }}"></script>
-<script src="{{ 'assets/js/skel.min.js' | absolute_url }}"></script>
-<script src="{{ 'assets/js/util.js' | absolute_url }}"></script>
-<script src="{{ 'assets/js/main.js' | absolute_url }}"></script>
-<script src="{{ 'assets/js/sendForm.js' | absolute_url }}"></script>
