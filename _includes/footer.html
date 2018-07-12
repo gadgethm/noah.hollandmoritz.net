@@ -3,12 +3,14 @@
   
   <!-- Copyright -->
   <ul class="copyright">
-    {% if site.title or site.author %}
-      <li>&copy; &nbsp;{{- site.title | default: site.author -}}&nbsp; - &nbsp;All rights reserved.</li>
+    {% if site.author %}
+    <li>&copy; &nbsp; {{ site.author }}&nbsp; - &nbsp;All rights reserved.</li>
     {% endif %}
-    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    <li>Last Modified: {{ site.time | date:"%B %d, %Y" }}</li>
+  </ul>
+  <ul class = "copyright">
+    <li>Design Template: <a href="http://html5up.net">HTML5 UP</a></li>
     <li>Jekyll integration: <a href="https://chrisbobbe.github.io/">Chris Bobbe</a></li>
-      <li>Last Modified: </li>
   </ul>
   
 </div>
