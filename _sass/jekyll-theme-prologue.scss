@@ -2,7 +2,9 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @charset "UTF-8";
-@import url("font-awesome.min.css");
+@import 'fontawesome/fontawesome.scss';
+@import 'fontawesome/fa-solid.scss';
+@import 'fontawesome/fa-brands.scss';
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
 /*
@@ -135,7 +137,7 @@
 		outline: 0;
 
 		&:hover {
-			color: #E27689;
+			color: $accent;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 	}
@@ -476,7 +478,7 @@
 
 		&:before {
 			display: inline-block;
-			font-family: FontAwesome;
+            font-family: "Font Awesome 5 Free","Font Awesome 5 Brands";
 			font-size: 1.25em;
 			text-decoration: none;
 			font-style: normal;
@@ -592,6 +594,9 @@
 						position: relative;
 						display: block;
 						font-size: 0.8em;
+                        line-height: 2.5em;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: normal;
 
 						&:before {
 							position: absolute;
@@ -599,7 +604,7 @@
 							color: #41484c;
 							text-align: center;
 							width: 1.25em;
-							line-height: 1.75em;
+							line-height: 1.5em;
 						}
 					}
 
@@ -609,7 +614,7 @@
 						color: #fff;
 
 						span:before {
-							color: #e27689;
+							color: $accent;
 						}
 					}
 				}
@@ -982,7 +987,7 @@
 					border: 0;
 
 					&:before {
-						font-family: FontAwesome;
+						font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
 						text-decoration: none;
 						font-style: normal;
 						font-weight: normal;
