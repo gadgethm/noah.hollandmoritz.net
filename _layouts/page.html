@@ -8,10 +8,12 @@ layout: default
 	<!-- Page -->
 	<article class="shade-two">
 	  <div class="container">
-			<header>
+		{%- if page.hide_titles != true -%}	
+            <header>
 				<h2>{{- page.title -}}</h2>
 				{%- if page.subtitle -%}<p>{{- page.subtitle -}}</p>{%- endif -%}
 			</header>
+        {%- endif -%}
 	    {{- content -}}
 	  </div>
 	</article>

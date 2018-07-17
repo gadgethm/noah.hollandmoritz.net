@@ -10,16 +10,15 @@
 
 // Size.
 	$size: (
-		header: 275px
+		header-narrower: 275px,
+        header-mobile: 260px
 	);
 
 // Font.
 	$font: (
 	);
 
-// Palette.
-	$palette: (
-	);
-
-// Accent color
-    $accent: #e27689;
+// Palette:
+    $accent: #267326;
+    $button: #101010;
+    

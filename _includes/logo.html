@@ -1,7 +1,7 @@
 <!-- Logo -->
 <div id="logo">
   <a href="{{- '/' | absolute_url -}}" id="home-link">
-    <span class="image avatar48"><img src="{{- site.avatar | relative_url -}}" alt="{{- site.author | default: 'unknown author' | prepend: 'Avatar of ' -}}" /></span>
+      <span class="image avatar100"><div class="responsive-container-1-1"><img id = "preload" onload="fadeIn(this,150)" src="{{- site.avatar | relative_url -}}" style="opacity:0"/></div></span>
     <h1 id="title">{{- site.title -}}</h1>
     <p>{{- site.subtitle -}}</p>
   </a>

@@ -13,7 +13,7 @@
 
 {%- if include.photo and include.photo-alt -%}
 	{%- capture _photo -%}
-		<img src="{{- include.photo | relative_url -}}" alt="{{- include.photo-alt -}}" class="back">
+		<img id = "preload" onload="fadeIn(this,500)" src="{{- include.photo | relative_url -}}" alt="{{- include.photo-alt -}}" class="back" style="display:none">
 	{%- endcapture -%}
 	{%- assign _class = 'shade-one cover dark' -%}
 {%- else -%}
