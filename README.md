@@ -1,3 +1,7 @@
+# Personal Webpage/Portfolio
+
+Hi, my name is Noah Holland-Moritz, and you've reached the github page for my website!  I originally created this site as part of the requirements for my school's [Engineering Honors Program](http://www.cuhonorsengineering.com/).  Now it serves as my personal webpage.  Feel free to use my code for your own nefarious purposes, and contact me if you are having trouble setting it up and want some pointers.  Below  is the original readme for this website theme.  Cheers!
+
 # Prologue - Jekyll Theme
 
 [![Gem Version](https://badge.fury.io/rb/jekyll-theme-prologue.svg)](https://badge.fury.io/rb/jekyll-theme-prologue)
