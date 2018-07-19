@@ -13,11 +13,22 @@
         {%- assign _title = _page.title | default: _page.layout -%}
         {%- assign _slug = _title | slugify -%}
         {%- assign _icon = _page.icon | default: 'fa-link' -%}
+        {%- assign _sections = include.section_items | where_exp: "section", "section.hide != true" -%}
         {%- comment -%}<!-- page.url (no underscore) is the url of the current page-->{%- endcomment -%}
         {%- if _page.url == page.url -%}
           <li><a href="#" id="{{- _slug -}}" class="active">
               <span class="icon fa fas {{ _icon }}">{{- _title -}}</span>
-          </a></li>
+          </a></li>                
+                <nav id="subnav">
+                {%- unless _sections == null -%}
+                    {%- for _sect in _sections -%}
+                        {%- assign _title = _sect.title | default: _sect.layout | default: 'Untitled' -%}
+                        {%- assign _slug = _title | slugify -%}
+                        {%- assign _icon = _sect.icon | default: 'fa-file' -%}
+                        <li><a href="#{{- _slug -}}" id="{{- _slug -}}-link" class="scrolly"><span class="icon fa fas {{ _icon }}">{{- _title -}}</span></a></li>
+                    {%- endfor -%}
+                {%- endunless -%}
+                </nav>
         {%- elsif _page.url -%}
           <li><a href="{{- _page.url | absolute_url -}}" id="{{- _slug -}}-link">
             <span class="icon fa fas {{ _icon }}">{{- _title -}}</span>
@@ -27,16 +38,7 @@
         {%- endif -%}
       {%- endfor -%}
     {%- endunless -%}
-    {%- assign _sections = include.section_items | where_exp: "section", "section.hide != true" -%}
-    {%- if _pages[0] and _sections[0] -%}<hr>{%- endif -%}
-    {%- unless _sections == null -%}
-      {%- for _sect in _sections -%}
-        {%- assign _title = _sect.title | default: _sect.layout | default: 'Untitled' -%}
-        {%- assign _slug = _title | slugify -%}
-        {%- assign _icon = _sect.icon | default: 'fa-file' -%}
-        <li><a href="#{{- _slug -}}" id="{{- _slug -}}-link" class="scrolly"><span class="icon fa fas {{ _icon }}">{{- _title -}}</span></a></li>
-      {%- endfor -%}
-    {%- endunless -%}
+    
     <hr>
   </ul>
 </nav>
