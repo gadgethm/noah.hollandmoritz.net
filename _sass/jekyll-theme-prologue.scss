@@ -654,55 +654,57 @@ button,
 }
 
 #nav {
+	hr {
+		margin: auto 1.5rem;
+	}
+
 	ul {
 		list-style: none;
 		margin-bottom: 0;
 
-		hr {
-			margin: auto 1.5rem;
-		}
-
 		li {
 			a {
 				display: block;
-                position: relative;
+				position: relative;
 				padding: 0.5em 1.5rem 0.5em 1.5rem;
 				color: rgba(255, 255, 255, 0.5);
 				text-decoration: none;
-                text-align: left;
+				text-align: left;
 				outline: 0;
 				border: 0;
 
-
 				@include vendor("transition", "none");
 
-                span.label {
-                    position: relative;
-                    display: inline-block;
-                    font-size: 0.8em;
-                    line-height: 2em;
-                    font-family: 'Source Sans Pro', sans-serif;
-                    font-weight: normal;
-                }
+				span.label {
+					position: relative;
+					display: inline-block;
+					font-size: 0.8em;
+					line-height: 2em;
+					left: 25%;
+					height: 100%;
+					width: 75%;
+					font-family: 'Source Sans Pro', sans-serif;
+					font-weight: normal;
+				}
 
-                span.icon {
-                    position: absolute;
-                    float: right;
-                    display: inline-block;
-                    color: #41484c;
-                    text-align: center;
-                    height: 100%;
-                    width: 25%;
-                    top: 0;
-                    left: 75%;
-                    line-height: 1.25em;
+				span.icon {
+					position: absolute;
+					float: left;
+					display: inline-block;
+					color: #41484c;
+					text-align: center;
+					height: 100%;
+					width: 25%;
+					top: 0;
+					right: 75%;
+					line-height: 1.25em;
 
-                    &:before {
-                        position: relative;
-                        top: 50%;
-                        transform: translate(0,-50%);
-                    }
-                }
+					&:before {
+						position: relative;
+						top: 50%;
+						@include vendor("transform", "translate(0, -50%)");
+					}
+				}
 
 				&:hover {
 					background-color: rgba(0, 0, 0, 0.1);
@@ -715,7 +717,7 @@ button,
 					box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
 					color: #fff;
 
-					span:before {
+					span.icon:before {
 						color: $accent;
 					}
 				}
@@ -726,16 +728,38 @@ button,
 
 #subnav {
 
-    background-color: #323639;
-	box-shadow: inset -0.25em 0 0.5em 0 rgba(0, 0, 0, 0.3);
-	font-weight: normal;
-	font-size: 0.8em;
+	nav {
+		background-color: #323639;
+		box-shadow: inset -0.25em 0 0.5em 0 rgba(0, 0, 0, 0.3);
+		font-weight: normal;
+		font-size: 0.8em;
+        li{
 
-    span.icon {
-        font-size: 0.9em;
-        vertical-align: middle;
+		a {
+            border-left: solid 0px #323639;
+            @include vendor("transition", "border-left 110ms ease-in, background-color 110ms ease-in, color 110ms ease-in");
 
-    }
+            &:hover {
+                border-left: solid 6px $accent;
+            }
+            &.active {
+                border-left: solid 6px rgba(0,0,0,0.0);
+                box-shadow: none;
+                &:hover {
+                    border-left: solid 6px $accent;
+                }
+            }
+
+			span.icon {
+				font-size: 0.9em;
+				vertical-align: middle;
+                &:before {
+                    @include vendor("transition", "color 110ms ease-in");
+                }
+			}
+		}
+        }
+	}
 }
 
 /* Footer */
@@ -900,10 +924,8 @@ button,
 
 	/* Header */
 	#nav {
-		ul {
-			hr {
-				margin: auto 1.25em;
-			}
+		hr {
+			margin: auto 1.25em;
 		}
 	}
 }
@@ -1069,12 +1091,12 @@ button,
 	}
 
 	#nav {
+		hr {
+			margin: auto 1.25em;
+		}
+
 		ul {
 			list-style: none;
-
-			hr {
-				margin: auto 1.25em;
-			}
 
 			li {
 				a {
