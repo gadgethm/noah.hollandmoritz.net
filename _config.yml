@@ -33,8 +33,7 @@
 title: Noah Holland-Moritz
 subtitle: Engineering Physics
 description: >- # this means to ignore newlines until "baseurl:"
-  This is the demo site for a Jekyll theme version of
-  HTML5 UP's sleek, responsive site template Prologue.
+  A personal website and blog for Noah Holland-Moritz
 author: Noah Holland-Moritz
 email:
 avatar: assets/images/avatar.jpg
@@ -48,7 +47,7 @@ facebook_url: https://www.facebook.com/nhollandmoritz
 github_url: https://github.com/gadgethm
 googleplus_url:
 instagram_url: https://www.instagram.com/gadgethm
-linkedin_url: https://www.linkedin.com/in/noah-holland-moritz-49b742122
+linkedin_url: https://www.linkedin.com/in/nhollandmoritz
 pinterest_url:
 slack_url:
 twitter_url:
