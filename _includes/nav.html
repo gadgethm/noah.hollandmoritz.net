@@ -17,7 +17,7 @@ section_items
         {%- assign _sections = include.section_items | where_exp: "section", "section.hide != true" -%}
         {%- comment -%}
         <!-- page.url (no underscore) is the url of the current page-->{%- endcomment -%}
-        {%- if _page.url == page.url -%}
+        {%- if page.url == _page.url -%}
         <li><a href="#" id="{{- _slug -}}" class="active">
                 <span class="label">{{- _title -}}</span>
                 <span class="icon fa fas {{ _icon }}"></span>
@@ -36,6 +36,7 @@ section_items
         {%- endfor -%}
         {%- endunless -%}
 </nav>
+
 {%- elsif _page.url -%}
 <li><a href="{{- _page.url | absolute_url -}}" id="{{- _slug -}}-link">
         <span class="label">{{- _title -}}</span>
