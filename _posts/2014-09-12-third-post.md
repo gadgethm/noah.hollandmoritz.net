@@ -2,6 +2,7 @@
 title: Third Post
 author: Chris
 layout: post
+categories: [photo]
 icon: fa-lightbulb
 ---
 See the icon?

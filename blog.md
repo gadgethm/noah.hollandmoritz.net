@@ -2,5 +2,6 @@
 layout: blog
 title: Photo Blog
 icon: fa-camera
-order: 3
+categories: [photo]
+order: 4
 ---

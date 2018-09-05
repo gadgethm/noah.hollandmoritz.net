@@ -58,9 +58,10 @@ google_analytics:
 
 # The following settings are NECESSARY for the Prologue theme to run:
 theme: jekyll-theme-prologue
-collections: [sections]
+collections: [home, education]
+permalink: none
 
-exclude: ["rakefile","Gemfile","Gemfile.lock","LICENSE.md","jekyll-theme-prologue.gemspec"]
+exclude: ["rakefile","Gemfile","Gemfile.lock","jekyll-theme-prologue.gemspec"]
 
 sass:
    sass_dir: _sass

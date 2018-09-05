@@ -798,7 +798,11 @@ button,
 	margin-left: 400px;
 
 	> section {
-		text-align: center;
+		text-align: left;
+
+        &.centering {
+            text-align: center;
+        }
 	}
 
 	> article {
