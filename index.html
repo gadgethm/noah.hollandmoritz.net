@@ -54,6 +54,7 @@ window.fadeIn = function(obj,delay) {
   </a>
 </div><!-- Nav -->
 <nav id="nav">
+   <hr>
     <ul><li><a href="#" id="homepage" class="active">
                 <span class="label">Homepage</span>
                 <span class="icon fa fas fa-home"></span>
@@ -65,8 +66,8 @@ window.fadeIn = function(obj,delay) {
             </a></li><li><a href="#about-me" id="about-me-link" class="scrolly">
                 <span class="label">About Me</span>
                 <span class="icon fa fas fa-user"></span>
-            </a></li><li><a href="#projects" id="projects-link" class="scrolly">
-                <span class="label">Projects</span>
+            </a></li><li><a href="#highlights" id="highlights-link" class="scrolly">
+                <span class="label">Highlights</span>
                 <span class="icon fa fas fa-space-shuttle"></span>
             </a></li><li><a href="#contact" id="contact-link" class="scrolly">
                 <span class="label">Contact</span>
@@ -74,6 +75,9 @@ window.fadeIn = function(obj,delay) {
             </a></li></nav><li><a href="/education.html" id="education-link">
         <span class="label">Education</span>
         <span class="icon fa fas fa-graduation-cap"></span>
+    </a></li><li><a href="/projects.html" id="projects-link">
+        <span class="label">Projects</span>
+        <span class="icon fa fas fa-rocket"></span>
     </a></li><li><a href="/blog.html" id="photo-blog-link">
         <span class="label">Photo Blog</span>
         <span class="icon fa fas fa-camera"></span>
@@ -85,7 +89,7 @@ window.fadeIn = function(obj,delay) {
 <ul class="icons"><li><a href="https://www.facebook.com/nhollandmoritz" class="icon fab fa-facebook-f"><span class="label">Facebook</span></a></li><li><a href="https://www.instagram.com/gadgethm" class="icon fab fa-instagram"><span class="label">Instagram</span></a></li><li><a href="https://www.linkedin.com/in/nhollandmoritz" class="icon fab fa-linkedin-in"><span class="label">LinkedIn</span></a></li><li><a href="https://github.com/gadgethm" class="icon fab fa-github"><span class="label">GitHub</span></a></li></ul></div>
 </div>
 <!-- Main -->
-<div id="main"><!-- Sections --><section id="intro" class="shade-one cover dark">
+<div id="main"><!-- Sections --><section id="intro" class="shade-one cover dark centering">
   <div class="container"><img id = "preload" onload="fadeIn(this,500)" src="/assets/images/banner.jpg" alt="example cover photo" class="back" style="display:none"><div class="text-background"></div>
 <header>
         <h2 class="alt">Hi! I'm Noah, and you've found my personal website!</h2>
@@ -96,7 +100,7 @@ window.fadeIn = function(obj,delay) {
 </footer>
 </div>
 </section>
-<section id="about-me" class="shade-two">
+<section id="about-me" class="shade-two centering">
   <div class="container"><header>
 			<h2>About Me</h2></header><div class="responsive-container-16-9">
 <a href="#about-me" class="image featured scrolly"><img id = "preload" onload="fadeIn(this,250)" src="assets/images/aboutpic.jpg" alt="" style="opacity:0"/></a>
@@ -110,9 +114,9 @@ dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
 ornare iaculis.</p>
 </div>
 </section>
-<section id="projects" class="shade-three">
+<section id="highlights" class="shade-three centering">
   <div class="container"><header>
-			<h2>Projects</h2></header><p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
+			<h2>Highlights</h2></header><p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
   egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
   Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
   fusce hendrerit lacus ridiculus.</p>
@@ -163,7 +167,7 @@ ornare iaculis.</p>
   </div>
 </div>
 </section>
-<section id="contact" class="shade-four">
+<section id="contact" class="shade-four centering">
   <div class="container"><header>
 			<h2>Contact</h2></header>Please fill out this form to send me an email!
 
@@ -183,7 +187,8 @@ ornare iaculis.</p>
 </form>
 </div>
 </section>
-</div><!-- Footer -->
+</div>
+<!-- Footer -->
 <div id="footer">
   
   <!-- Copyright -->
@@ -194,9 +199,17 @@ ornare iaculis.</p>
     <li>Last Modified: September 04, 2018</li>
   </ul>
   <ul class = "copyright">
-    <li>Design Template: <a href="http://html5up.net">HTML5 UP</a></li>
+    <li>Original Design: <a href="http://html5up.net/prologue">Prologue</a> by <a href="http://html5up.net">HTML5 UP</a></li>
     <li>Jekyll integration: <a href="https://chrisbobbe.github.io/">Chris Bobbe</a></li>
   </ul>
+  <br>
+  <ul class = "copyright">
+      <li>Template Customization: <a href="https://github.com/gadgethm/gadgethm.github.io">Noah Holland-Moritz</a></li>
+  </ul>
+  <ul>
+      <li>This work is licensed under a <a rel="license" href="/license">Creative Commons Attribution 4.0 International License</a>.</li>
+  </ul>
   
-</div></body>
+</div>
+</body>
 </html>

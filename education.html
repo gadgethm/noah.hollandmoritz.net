@@ -54,6 +54,7 @@ window.fadeIn = function(obj,delay) {
   </a>
 </div><!-- Nav -->
 <nav id="nav">
+   <hr>
     <ul><li><a href="/" id="homepage-link">
         <span class="label">Homepage</span>
         <span class="icon fa fas fa-home"></span>
@@ -62,7 +63,13 @@ window.fadeIn = function(obj,delay) {
                 <span class="icon fa fas fa-graduation-cap"></span>
             </a></li>
         <li id="subnav">
-            <nav></nav><li><a href="/blog.html" id="photo-blog-link">
+            <nav><li><a href="#resume-download" id="resume-download-link" class="scrolly">
+                <span class="label">Resume Download</span>
+                <span class="icon fa fas fa-file"></span>
+            </a></li></nav><li><a href="/projects.html" id="projects-link">
+        <span class="label">Projects</span>
+        <span class="icon fa fas fa-rocket"></span>
+    </a></li><li><a href="/blog.html" id="photo-blog-link">
         <span class="label">Photo Blog</span>
         <span class="icon fa fas fa-camera"></span>
     </a></li></ul>
@@ -73,16 +80,15 @@ window.fadeIn = function(obj,delay) {
 <ul class="icons"><li><a href="https://www.facebook.com/nhollandmoritz" class="icon fab fa-facebook-f"><span class="label">Facebook</span></a></li><li><a href="https://www.instagram.com/gadgethm" class="icon fab fa-instagram"><span class="label">Instagram</span></a></li><li><a href="https://www.linkedin.com/in/nhollandmoritz" class="icon fab fa-linkedin-in"><span class="label">LinkedIn</span></a></li><li><a href="https://github.com/gadgethm" class="icon fab fa-github"><span class="label">GitHub</span></a></li></ul></div>
 </div>
 <!-- Main -->
-<div id="main">
-	<!-- Page -->
-	<article class="shade-two">
-	  <div class="container"><h2 id="resume-download">Resume Download</h2>
-<p><input type="button" onclick="window.open('Noah Holland-Moritz - Resume.pdf')" value="Resume - PDF" /></p>
+<div id="main"><!-- Sections --><section id="resume-download" class="shade-two">
+  <div class="container"><header>
+			<h2>Resume Download</h2></header><p>You can download my resume in PDF form by the button below:</p>
 
-<p>Below is a brief overview of my skills and experience.  You can download my resume in PDF form by clicking here:</p>
+<p><input type="button" onclick="window.open('Noah Holland-Moritz - Resume.pdf')" value="Resume - PDF" /></p>
 </div>
-	</article>
-</div><!-- Footer -->
+</section>
+</div>
+<!-- Footer -->
 <div id="footer">
   
   <!-- Copyright -->
@@ -93,9 +99,17 @@ window.fadeIn = function(obj,delay) {
     <li>Last Modified: September 04, 2018</li>
   </ul>
   <ul class = "copyright">
-    <li>Design Template: <a href="http://html5up.net">HTML5 UP</a></li>
+    <li>Original Design: <a href="http://html5up.net/prologue">Prologue</a> by <a href="http://html5up.net">HTML5 UP</a></li>
     <li>Jekyll integration: <a href="https://chrisbobbe.github.io/">Chris Bobbe</a></li>
   </ul>
+  <br>
+  <ul class = "copyright">
+      <li>Template Customization: <a href="https://github.com/gadgethm/gadgethm.github.io">Noah Holland-Moritz</a></li>
+  </ul>
+  <ul>
+      <li>This work is licensed under a <a rel="license" href="/license">Creative Commons Attribution 4.0 International License</a>.</li>
+  </ul>
   
-</div></body>
+</div>
+</body>
 </html>
