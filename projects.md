@@ -3,6 +3,6 @@ layout: blog
 title: Projects
 icon: fa-rocket
 categories: [project]
-permalink: projects
+permalink: /project
 order: 3
 ---

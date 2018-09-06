@@ -57,11 +57,14 @@ dribbble_url:
 google_analytics:
 
 # The following settings are NECESSARY for the Prologue theme to run:
-theme: jekyll-theme-prologue
+theme: jekyll-theme-prologue-mod
 collections: [home, education]
 permalink: none
 
 exclude: ["rakefile","Gemfile","Gemfile.lock","jekyll-theme-prologue.gemspec"]
+
+plugins:
+#    - jekyll-minifier
 
 sass:
    sass_dir: _sass
