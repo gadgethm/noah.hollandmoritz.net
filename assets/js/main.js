@@ -53,13 +53,13 @@
 
                         // External link? Bail.
                             if ($this.attr('href').charAt(0) != '#')
-                                return;
+                                return false;
 
                         // Prevent default.
                             e.preventDefault();
 
                         if ($this.hasClass("active"))
-                            return;
+                            return false;
                         // Deactivate all links.
                             $nav_a.removeClass('active');
                             $nav_a.removeClass('active-locked');
@@ -69,6 +69,8 @@
                             $this
                                 .addClass('active')
                                 .addClass('active-locked');
+                        //Return false essentially calls both preventDefault() and stopPropagation()
+                        return false;
 
 					})
 
@@ -91,8 +93,14 @@
                             bottom: '-10vh',
                             initialize: function() {
 
-                            },
+								// Deactivate section.
+									$section.addClass('inactive');
+
+							},
                             enter: function() {
+
+                                // Activate section.
+									$section.removeClass('inactive');
 
                                 // No locked links? Deactivate all links and activate this section's one.
                                 if ($nav_a.filter('.active-locked').length == 0) {
@@ -108,7 +116,7 @@
 
                             }
                         });
-			});
+			     });
 
         // Scrolly links.
 			$('.scrolly').scrolly();
