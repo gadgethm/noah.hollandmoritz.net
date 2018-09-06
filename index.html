@@ -30,7 +30,7 @@ Jekyll integration by Chris Bobbe | chrisbobbe.github.io
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" defer></script>
   <script src="/assets/js/jquery.scrolly.min.js" defer></script>
-  <script src="/assets/js/jquery.scrollzer.min.js" defer></script>
+  <script src="/assets/js/jquery.scrollex.min.js" defer></script>
   <script src="/assets/js/skel.min.js" defer></script>
   <script src="/assets/js/util.js" defer></script>
   <!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js" defer></script><![endif]-->
@@ -43,7 +43,8 @@ window.fadeIn = function(obj,delay) {
 }
 </script>
 
-</head><body><!-- Header -->
+</head>
+<body><!-- Header -->
 <div id="header">
   <div class="top"><!-- Logo -->
 <div id="logo">
@@ -75,10 +76,10 @@ window.fadeIn = function(obj,delay) {
             </a></li></nav><li><a href="/education.html" id="education-link">
         <span class="label">Education</span>
         <span class="icon fa fas fa-graduation-cap"></span>
-    </a></li><li><a href="/projects.html" id="projects-link">
+    </a></li><li><a href="/project" id="projects-link">
         <span class="label">Projects</span>
         <span class="icon fa fas fa-rocket"></span>
-    </a></li><li><a href="/blog.html" id="photo-blog-link">
+    </a></li><li><a href="/photo" id="photo-blog-link">
         <span class="label">Photo Blog</span>
         <span class="icon fa fas fa-camera"></span>
     </a></li></ul>
@@ -102,21 +103,19 @@ window.fadeIn = function(obj,delay) {
 </section>
 <section id="about-me" class="shade-two centering">
   <div class="container"><header>
-			<h2>About Me</h2></header><div class="responsive-container-16-9">
-<a href="#about-me" class="image featured scrolly"><img id = "preload" onload="fadeIn(this,250)" src="assets/images/aboutpic.jpg" alt="" style="opacity:0"/></a>
-</div>
+			<h2>About Me</h2></header><img id = "preload" onload="fadeIn(this,250)" src="assets/images/profile.jpg" alt="" style="opacity:0;width:30%;height:30%;float:left;margin:1rem 3rem 1rem 1rem;border-radius:15%"/>
 
-<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-ornare iaculis.</p>
+<p>I'm a recently graduated student of <a href="http://www.colorado.edu">University of Colorado</a>, majoring in Engineering Physics.  I currently work as an electrical test engineer at <a href="http://www.bluecanyontech.com">Blue Canyon Technologies</a> developing satellite hardware. In my spare time, I like to take photos, look up at the stars and <a href="/project">make things</a>. I also enjoy hiking, mountain biking, skiing, and backpacking!</p>
+
+
 </div>
 </section>
 <section id="highlights" class="shade-three centering">
   <div class="container"><header>
-			<h2>Highlights</h2></header><p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
+			<h2>Highlights</h2></header><div class="responsive-container-16-9">
+    <a href="#highlights" class="image featured scrolly"><img id = "preload" onload="fadeIn(this,250)" src="assets/images/aboutpic.jpg" alt="" style="opacity:0"/></a> </div>
+
+<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
   egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
   Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
   fusce hendrerit lacus ridiculus.</p>
@@ -196,7 +195,7 @@ ornare iaculis.</p>
     
     <li>&copy; &nbsp; Noah Holland-Moritz&nbsp; - &nbsp;All rights reserved.</li>
     
-    <li>Last Modified: September 04, 2018</li>
+    <li>Last Modified: September 06, 2018</li>
   </ul>
   <ul class = "copyright">
     <li>Original Design: <a href="http://html5up.net/prologue">Prologue</a> by <a href="http://html5up.net">HTML5 UP</a></li>
