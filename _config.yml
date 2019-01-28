@@ -64,7 +64,7 @@ permalink: none
 exclude: ["rakefile","Gemfile","Gemfile.lock","jekyll-theme-prologue.gemspec"]
 
 plugins:
-#    - jekyll-minifier
+    - jekyll-minifier
 
 sass:
    sass_dir: _sass
