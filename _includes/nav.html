@@ -20,7 +20,7 @@ section_items
         {%- if page.url == _page.url -%}
         <li><a href="#" id="{{- _slug -}}" class="active">
                 <span class="label">{{- _title -}}</span>
-                <span class="icon fa fas {{ _icon }}"></span>
+                <span class="icon fa {{ _icon }}"></span>
             </a></li>
         <li id="subnav">
             <nav>
@@ -31,7 +31,7 @@ section_items
                 {%- assign _icon = _sect.icon | default: 'fa-file' -%}
         <li><a href="#{{- _slug -}}" id="{{- _slug -}}-link" class="scrolly">
                 <span class="label">{{- _title -}}</span>
-                <span class="icon fa fas {{ _icon }}"></span>
+                <span class="icon fa {{ _icon }}"></span>
             </a></li>
         {%- endfor -%}
         {%- endunless -%}
@@ -40,10 +40,10 @@ section_items
 {%- elsif _page.url -%}
 <li><a href="{{- _page.url | absolute_url -}}" id="{{- _slug -}}-link">
         <span class="label">{{- _title -}}</span>
-        <span class="icon fa fas {{ _icon }}"></span>
+        <span class="icon fa {{ _icon }}"></span>
     </a></li>
 {%- else -%}
-<li><a href="{{- '/' | absolute_url -}}" id="broken-link"><span>[broken link]<span class="fa fas fa-unlink"></span></span></a></li>
+<li><a href="{{- '/' | absolute_url -}}" id="broken-link"><span>[broken link]<span class="fa fa-unlink"></span></span></a></li>
 {%- endif -%}
 {%- endfor -%}
 {%- endunless -%}

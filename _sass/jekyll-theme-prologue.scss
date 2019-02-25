@@ -30,7 +30,7 @@ body {
 	font-size: 19pt;
 	font-weight: 300;
 	line-height: 1.75em;
-	color: #888;
+	color: #777;
 
 	&.is-loading * {
 		@include vendor("transition", "none !important");
@@ -43,11 +43,11 @@ input, textarea, select {
 	font-size: 19pt;
 	font-weight: 300;
 	line-height: 1.75em;
-	color: #888;
+	color: #777;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 300;
+	font-weight: 500;
 	color: #666;
 	line-height: 1.5em;
 }
@@ -83,7 +83,7 @@ footer {
 }
 
 strong, b {
-	font-weight: 300;
+	font-weight: 400;
 	color: #666;
 }
 
@@ -243,13 +243,23 @@ section, article {
 
 	&.left {
 		float: left;
-		margin: 0 2em 2em 0;
+        overflow: hidden;
+        width: 30%;
+        height: 30%;
+        margin: 1rem 3rem 1rem 1rem;
 	}
 
 	&.right {
 		float: right;
-		margin: 0 0 2em 2em;
+        overflow: hidden;
+        width: 30%;
+        height: 30%;
+        margin: 1rem 1rem 1rem 3rem;
 	}
+    
+    &.mobileAbsent {
+        margin: -8rem 1rem 1rem 3rem;
+    }
 
 	&.centered {
 		display: block;
@@ -517,38 +527,34 @@ button,
 
 /* Responsive Image Containers (For page loading) */
 
-.responsive-container-1-1 {
+.responsive-container {
 	width: 100%;
-	padding-bottom: 100%;
-
-	/* 9/16 = aspect ratio of image */
 	position: relative;
 	height: 0;
 	overflow: hidden;
-}
-
-.responsive-container-1-1 img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-}
-
-.responsive-container-16-9 {
-	width: 100%;
-	padding-bottom: 56.25%;
-
-	/* 9/16 = aspect ratio of image */
-	position: relative;
-	height: 0;
-	overflow: hidden;
-}
-
-.responsive-container-16-9 img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
+    
+    &.dim16-9 {
+        padding-bottom: 56.25%;
+    }
+    
+    &.dim5-4 {
+        padding-bottom: 80%;
+    }
+    
+    &.dim3-2 {
+        padding-bottom: 66.67%;
+    }
+    
+    &.dim1-1 {
+        padding-bottom: 100%;
+    }
+    
+    &.dim8-10 {
+        padding-bottom: 125%;
+    }
+    &.dim8_5-11 {
+        padding-bottom: 129.411%;
+    }
 }
 
 /* Text background on title*/
@@ -888,6 +894,12 @@ button,
 	body, input, textarea, select {
 		font-size: 17pt;
 	}
+    
+    .image {
+         &.mobileAbsent {
+             margin: -6rem 1rem 1rem 3rem;
+        }
+    }
 
 	/* Header */
 
@@ -969,6 +981,13 @@ button,
 	.item {
 		margin-bottom: 20px;
 	}
+    
+    /* Image */
+    .image {
+         &.mobileAbsent {
+             margin: -6rem 1rem 1rem 3rem;
+        }
+    }
 
 	/* Header */
 
@@ -1036,6 +1055,13 @@ button,
 	.item {
 		margin-bottom: 15px;
 	}
+    
+    /* Image */
+    .image {
+         &.mobileAbsent {
+             margin: -6rem 1rem 1rem 3rem;
+        }
+    }
 
 	/* List */
 
@@ -1204,7 +1230,20 @@ button,
 
 @include breakpoint(mobile) {
 	/* Basic */
-
+    
+    .image {
+        &.left, &.right {
+            float: none;
+            width: 100%;
+            margin: 0;
+            padding: 0rem 2rem 0rem 2rem;
+        }
+        
+        &.mobileAbsent {
+            display: none;
+        }
+    }
+    
 	body, input, textarea, select {
 		font-size: 14pt;
 	}
@@ -1254,6 +1293,8 @@ button,
 		}
 
 		section {
+            text-align: center;
+            
 			&.cover {
 				padding: 18em 0 2em 0;
 
